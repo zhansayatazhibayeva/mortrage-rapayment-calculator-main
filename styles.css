@@ -32,77 +32,56 @@ label{
     font-weight: 500;
     font-size: 14px;
 }
-.inputBox{
-    position: absolute;
-    width: 100%;
-    display: flex;
-}
+
 .left {
     padding: 20px;
 }
-.helperBox{
-    padding: relative;
-    top: 50%;
-    left: 30px;
-    color: #333;
-    font-size: 16px;
-    background-color: hsl(61, 70%, 52%);
-    padding: 10px;
-}
-/* input[type="text"]{
-    height: 40px;
-    font-size: 16px;
-    outline:none;
-    border:none;
-    padding-left: 10px;
-} */
-.inputBox{
-    border: 1px solid grey;
-    width: 80%;
-}
-.input-term{
-    margin-top: 50px;
+
+.input-group{       
     width: 100%;
 }
-
-.inputTerm{
-    border: 1px solid grey;
-    width: 80%;
+.inputBox{
     display: flex;
-    position: absolute;
-}
-.years{
-    position: relative;
-    top:0;
-    right:0;
-    font-size:16px;
-    background-color: hsl(203, 41%, 72%);
-    padding: 10px;
+    border:1px solid black;
 }
 input[type="number"]{
-    height: 40px;
-    font-size: 16px;
+    outline: none;
     border:none;
+    width: 100%;
+    /* padding: 5px 0; */
+    height: 30px;
+}
+.input-term{
     width: 100%;
 }
 .input-rate{
-    margin-top: 50px;
     width: 100%;
 }
-.percentage{
-    position: relative;
-    top:0;
-    right: 0;
-    font-size: 16px;
-    background-color:hsl(203, 41%, 72%);
-    padding: 10px;
+.helperBox, .years, .percentage{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: hsl(202, 86%, 94%);
+}
+/* .years, .percentage {
+    padding-top: 5px;
+    
+    background-color: hsl(202, 86%, 94%);
+} */
+.input-term-rate{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .inputBox, .inputTerm{
     border-radius: 5px;
     overflow: hidden;
+    width: 100%;
 }
-
+.input-group, .input-term, .input-term{
+    margin-bottom: 10px;
+}
 .mortrage-type{
     margin-top: 50px;
 }
@@ -220,36 +199,28 @@ input{
     label{
         font-size: 10px;
     }
-    .inputBox{
-        margin-top: 5px;
-        width: 28%;
-        height: 30px;
-    }
-    .helperBox{
-        font-size: 10px;
-    }
-    input[type="number"]{
-        height: 30px;
-        width: 100%;
+    .years, .percentage{
+        font-size: 13px;
     }
     .input-term-rate{
         display: flex;
+        flex-direction: row;
+        gap: 1rem;
     }
-    .inputTerm{
-        margin-top: 5px;
-        width: 13%;
-        height: 30px;
+    .input-term{
+        width: 50%;
+        margin-bottom: 0;
     }
-    .input-rate .inputBox{
-        margin-top: 5px;
-        width: 13%;
-        height: 30px;
+    .input-rate{
+        width: 50%;
+        margin-bottom: 0;
     }
-    .years, .percentage{
-        font-size: 10px;
+    .mortrage-type{
+        margin-top: 20px;
     }
     button{
         width: 70%;
+        margin-top: 20px;
     }
     .right{
         overflow: hidden;

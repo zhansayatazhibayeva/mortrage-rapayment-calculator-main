@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input-group{
+           
+            width: 100%;
+        }
+        .inputBox{
+            display: flex;
+            border:1px solid black;
+        }
+        input{
+            outline: none;
+            border:none;
+            width: 100%;
+        }
+        .input-term-rate{
+            display: flex;
+            gap: 1rem;
+        }
+        .input-term{
+            width: 50%;
+        }
+        .input-rate{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-group">
+        <label for="mortrageAmount">Mortgage Amount</label>
+        <div class="inputBox">
+            <div class="helperBox">&pound;</div>
+            <input type="number" name="mortrageAmount" id="mortrageAmount" >
+        </div>
+    </div>
+    <div class="input-term-rate">
+        <div class="input-term">
+          <label for="mortrageTerm">Mortrage Term</label>
+          <div class="inputBox">
+            <input type="number" name="mortrageTerm" id="mortrageTerm">
+            <div class="years">years</div>
+          </div>
+        </div>
+        <div class="input-rate">
+          <label for="interestRate">Interest Rate</label>
+          <div class="inputBox">
+            <input type="number" name="interestRate" id="interestRate">
+            <div class="percentage">%</div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
